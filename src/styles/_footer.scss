@@ -1,0 +1,22 @@
+// main: style.scss
+
+footer{
+  min-height: 10vh;
+  @include flex(space-between, center, row);
+  background-color: $main-color;
+color: $font-color;
+.copyright{
+  flex: 1 1 40rem;
+  @include flex(start, center, row);
+     padding: 0.5rem;
+}
+  .social-media{
+      flex: 1 1 40rem;
+@include flex(center, center, row);
+   padding: 0.5rem;
+  a { margin: 0.5rem 1rem;
+    img{
+    max-width: 2.5rem;}
+    }
+}
+}
