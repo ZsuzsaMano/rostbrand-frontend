@@ -6,7 +6,6 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 import PhotoAlbum from "react-photo-album";
 
-
 const Prints = () => {
   const [index, setIndex] = useState(-1);
 
@@ -32,18 +31,14 @@ const Prints = () => {
   const displayPrintsThumbnail = imgArray.map((img) => ({
     width: img.attributes.formats.small.width,
     height: img.attributes.formats.small.height,
-    src:
-      process.env.REACT_APP_BACKEND +
-      img.attributes.formats.small.url.substring(1),
+    src: img.attributes.formats.small.url,
   }));
 
   // this function is to prepare the data in a format required for the lightbox below
   const displayPrints = imgArray.map((img) => ({
     width: img.attributes.formats.medium.width,
     height: img.attributes.formats.medium.height,
-    src:
-      process.env.REACT_APP_BACKEND +
-      img.attributes.formats.medium.url.substring(1),
+    src: img.attributes.formats.medium.url,
     title: "Slide title",
     description: "Slide description",
   }));
@@ -69,6 +64,6 @@ const Prints = () => {
       </div>
     </Layout>
   );
-}
+};
 
 export default Prints;
