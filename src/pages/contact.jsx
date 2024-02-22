@@ -26,8 +26,7 @@ const Contact = () => {
 
   const alternativeText = imgData.alternativeText;
 
-  //the base url ends with '/' and the url of the img starts with one, so I have to remove one of them
-  const url = imgData?.url.substring(1);
+  const url = imgData?.url;
 
   return (
     <Layout>

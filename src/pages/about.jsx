@@ -37,11 +37,7 @@ const About = () => {
           </button>
         </div>
         <div className="image">
-          <img
-            src={imgData?.url.substring(1)}
-            alt={alternativeText}
-            id="peti"
-          />
+          <img src={imgData?.url} alt={alternativeText} id="peti" />
           <div className="card-text">
             <ReactMarkdown>{info}</ReactMarkdown>
           </div>
