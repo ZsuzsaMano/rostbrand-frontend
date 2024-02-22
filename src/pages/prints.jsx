@@ -59,6 +59,7 @@ const Prints = () => {
           close={() => setIndex(-1)}
           slides={displayPrints}
           plugins={[Captions]}
+          captions={{ descriptionTextAlign: "center" }}
         />
       </div>
     </Layout>

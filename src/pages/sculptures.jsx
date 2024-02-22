@@ -60,6 +60,7 @@ const Sculptures = () => {
           close={() => setIndex(-1)}
           slides={displaySculptures}
           plugins={[Captions]}
+          captions={{ descriptionTextAlign: "center" }}
         />
       </div>
     </Layout>
