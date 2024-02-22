@@ -8,7 +8,7 @@ const Footer = ()=>{
 return (
   <footer>
     <div className="copyright">
-      <small>&copy; Copyright 2022, Rostbrand</small>
+      <small>&copy; © {new Date().getFullYear()}, Rostbrand</small>
     </div>
     <div className="social-media">
       <a
@@ -16,10 +16,7 @@ return (
         target="_blank"
         rel="noreferrer"
       >
-        <img
-          src={insta}
-          alt="instagram"
-        />
+        <img src={insta} alt="instagram" />
       </a>
       <a
         href="https://www.facebook.com/peter.tauber.9"
