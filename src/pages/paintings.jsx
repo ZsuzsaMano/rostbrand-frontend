@@ -25,24 +25,18 @@ const Paintings = () => {
       });
   }
 
-
   // this function is to prepare the data in a format required for the thumbnails album below
   const displayPaintingsThumbnail = imgArray.map((img) => ({
     width: img.attributes.formats.small.width,
     height: img.attributes.formats.small.height,
-    src:
-      process.env.REACT_APP_BACKEND +
-      img.attributes.formats.small.url.substring(1),
+    src: img.attributes.formats.small.url,
   }));
-
 
   // this function is to prepare the data in a format required for the lightbox below
   const displayPaintings = imgArray.map((img) => ({
     width: img.attributes.formats.small.width,
     height: img.attributes.formats.small.height,
-    src:
-      process.env.REACT_APP_BACKEND +
-      img.attributes.formats.small?.url.substring(1),
+    src: img.attributes.formats.small?.url,
   }));
   return (
     <Layout>
