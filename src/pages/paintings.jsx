@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import Layout from "../components/layout";
 import Lightbox from "yet-another-react-lightbox";
 import PhotoAlbum from "react-photo-album";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
 
 const Paintings = () => {
   const [index, setIndex] = useState(-1);
@@ -55,6 +58,7 @@ const Paintings = () => {
           index={index}
           close={() => setIndex(-1)}
           slides={displayPaintings}
+          plugins={[Captions]}
         />
       </div>
     </Layout>
