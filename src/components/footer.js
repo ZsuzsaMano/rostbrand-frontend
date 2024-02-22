@@ -8,7 +8,7 @@ const Footer = ()=>{
 return (
   <footer>
     <div className="copyright">
-      <small>&copy; © {new Date().getFullYear()}, Rostbrand</small>
+      <small>&copy; {new Date().getFullYear()}, Rostbrand</small>
     </div>
     <div className="social-media">
       <a
