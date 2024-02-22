@@ -37,6 +37,7 @@ const Paintings = () => {
     width: img.attributes.formats.small.width,
     height: img.attributes.formats.small.height,
     src: img.attributes.formats.small?.url,
+    description: img.attributes.caption,
   }));
   return (
     <Layout>
