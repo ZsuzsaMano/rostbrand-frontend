@@ -39,8 +39,8 @@ const Prints = () => {
     width: img.attributes.formats.medium.width,
     height: img.attributes.formats.medium.height,
     src: img.attributes.formats.medium.url,
-    title: "Slide title",
-    description: "Slide description",
+    title: img.attributes.alternativeText,
+    description: img.attributes.caption,
   }));
 
   return (
