@@ -59,6 +59,7 @@ const Paintings = () => {
           close={() => setIndex(-1)}
           slides={displayPaintings}
           plugins={[Captions]}
+          captions={{ descriptionTextAlign: "center", descriptionMaxLines: 3 }}
         />
       </div>
     </Layout>
